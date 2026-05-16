@@ -2,16 +2,14 @@ const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").mat
 
 document.documentElement.classList.add("js-ready");
 
-/* ── Header scroll state ── */
 const header = document.querySelector(".site-header");
 const setHeaderState = () => {
   if (!header) return;
   header.classList.toggle("is-scrolled", window.scrollY > 24);
 };
 
-/* ── Scroll-triggered reveal animations ── */
 const revealItems = document.querySelectorAll(
-  "[data-anim], section:not(.hero):not(.home-video-hero):not(.page-hero):not(.jw-video-hero), article, .shop-card, .mini-card, .page-hero-copy, .feature-panel, .jw-shop-card, .ritual-card, .ritual-practice"
+  "[data-anim], section:not(.hero):not(.home-video-hero):not(.page-hero):not(.jw-video-hero), article, .shop-card, .mini-card, .page-hero-copy, .feature-panel, .jw-shop-card, .ritual-card, .ritual-practice, .ritual-cta-inner, .jw-intro-inner"
 );
 
 const revealVisibleItems = () => {
@@ -49,7 +47,6 @@ if (!prefersReduced && "IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
 
-/* ── Parallax scrolling ── */
 const parallaxItems = document.querySelectorAll("[data-parallax]");
 const parallax = () => {
   if (prefersReduced) return;
@@ -64,7 +61,6 @@ const parallax = () => {
   });
 };
 
-/* ── Smooth scroll tick ── */
 let ticking = false;
 const scrollTick = () => {
   if (!ticking) {
@@ -82,7 +78,6 @@ window.addEventListener("scroll", scrollTick, { passive: true });
 window.addEventListener("resize", parallax);
 scrollTick();
 
-/* ── Smooth anchor scroll ── */
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const target = document.querySelector(link.getAttribute("href"));

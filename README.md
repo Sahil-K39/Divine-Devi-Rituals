@@ -1,39 +1,46 @@
-# 🌙 Divine Devi Rituals
+# 🌿 Divine-Devi-Rituals
 
-A beautifully crafted e-commerce website celebrating sacred rituals, handmade crystal jewellery, travel stories, and spiritual embodiment.
+**A sacred e-commerce website for handmade crystal jewellery, rituals, and spiritual journeys.**
 
-**Live Site:** [divine-devi-rituals.vercel.app](https://divine-devi-rituals.vercel.app)
+🌍 **Live Site:** https://divine-devi-rituals.vercel.app
 
 ---
 
 ## 📖 Overview
 
-Divine Devi Rituals is a multi-page website designed with elegance and intention. It showcases:
+Divine-Devi-Rituals is a beautifully designed multi-page e-commerce website dedicated to sacred rituals, handmade macrame crystal jewellery, travel photography, and spiritual ceremonies. The site showcases the creative work and personal brand of Devi Divine, blending commerce with storytelling.
 
-- **Handmade Crystal Jewellery** - Curated collections of macramé and crystal adornments
-- **Sacred Rituals & Ceremonies** - Spiritual guidance and embodiment practices
-- **Travel & Photography** - Journey stories and destination imagery
-- **Blog Content** - Adventures and ritual experiences shared with the community
-- **Custom Designs** - Bespoke jewellery creation services
-- **Supplies & Wholesale** - Tools and resources for fellow artists and store owners
+**Key Features:**
+- ✨ Stunning animations and parallax scrolling effects
+- 🛍️ Complete e-commerce product showcase
+- 📸 High-quality imagery and gallery displays
+- 🧘 Spiritual and ritualistic branding
+- 💎 Crystal-inspired color palette and design
+- 📱 Fully responsive design
+- ♿ Accessible and semantic HTML
 
 ---
 
-## 🎨 Design & Brand
+## 🎨 Design & Branding
 
-**Color Palette:**
-- Paper: `#f0ebe4`
-- Clay: `#a27d70`
-- Cedar: `#745950`
-- Ink: `#4c3c36`
-- Sage: `#26352a`
+### Color Palette
 
-**Typography:**
-- Display: Allura (script)
-- Body: Questrial (geometric sans-serif)
+The design uses an earthy, natural color scheme inspired by earth and crystals:
 
-**Aesthetic:**
-Earthy, mystical, and contemporary with smooth animations, parallax scrolling, and responsive design for all devices.
+```css
+--paper: #f0ebe4          /* Off-white/cream base */
+--paper-deep: #e7ded5     /* Subtle background variation */
+--clay: #a27d70           /* Warm terracotta/bronze */
+--cedar: #745950          /* Deep brown accent */
+--ink: #4c3c36            /* Dark text color */
+--sage: #26352a           /* Forest green accent */
+--cream: #fffaf4          /* Light overlay color */
+```
+
+### Typography
+
+- **Serif/Decorative:** [Allura](https://fonts.google.com/specimen/Allura) (cursive) - Headlines and branding
+- **Body:** [Questrial](https://fonts.google.com/specimen/Questrial) (sans-serif) - Main text and UI
 
 ---
 
@@ -41,25 +48,24 @@ Earthy, mystical, and contemporary with smooth animations, parallax scrolling, a
 
 ```
 Divine-Devi-Rituals/
-├── index.html              # Homepage with hero, shop, blog, newsletter
-├── jewellery.html          # Main jewellery shop page
-├── about.html              # About Devi Divine
-├── contact.html            # Contact form & information
-├── blog.html               # Travel & ritual stories
+├── index.html              # Homepage with hero video, shop, blog preview
+├── jewellery.html          # Main jewellery collection & shopping guide
+├── ritual.html             # Spiritual ceremonies & practices
+├── blog.html               # Travel stories and articles
 ├── imagery.html            # Photography gallery & prints
-├── ritual.html             # Sacred ceremonies & practices
+├── about.html              # Creator biography
+├── contact.html            # Contact form
 ├── collections.html        # Curated jewellery collections
-├── all-products.html       # Complete product catalog
-├── customdesigns.html      # Custom jewellery order page
-├── crystals.html           # Crystal guide & descriptions
-├── supplies.html           # Maker supplies & wholesale
+├── all-products.html       # Full product catalog
+├── customdesigns.html      # Custom order information
+├── crystals.html           # Crystal descriptions & guide
+├── supplies.html           # Artist supplies shop
 ├── gift-card.html          # Gift card offerings
 ├── rewards.html            # Loyalty rewards program
-├── styles.css              # Main stylesheet
-├── script.js               # Interactive features & animations
-├── Catelog/                # Images, videos, and assets
-├── vercel.json             # Vercel deployment config
-├── .gitignore              # Git ignore rules
+├── styles.css              # All styling (1000+ lines)
+├── script.js               # Animations & interactions
+├── vercel.json             # Deployment config
+├── Catelog/                # Image assets directory
 └── README.md               # This file
 ```
 
@@ -67,185 +73,280 @@ Divine-Devi-Rituals/
 
 ## ✨ Key Features
 
-### 🎬 **Scroll Animations**
-- Intersection Observer API for performance-optimized reveals
-- Multiple animation styles: fade-up, fade-left, fade-right
-- Staggered animation delays for visual interest
-- Respects `prefers-reduced-motion` for accessibility
+### 🎬 Animations
 
-### 🔄 **Parallax Scrolling**
-- Smooth depth effect on images and backgrounds
-- Accessible and performant implementation
-- Disabled for users with motion reduction preferences
+- **Scroll-triggered reveals:** Elements fade and slide into view as you scroll
+- **Parallax scrolling:** Background images move at different speeds
+- **Hover effects:** Cards and images scale on interaction
+- **Smooth transitions:** All animations respect `prefers-reduced-motion`
+- **Staggered animations:** Multiple elements animate with cascading delays
 
-### 📱 **Responsive Design**
+### 📱 Responsive Design
+
 - Mobile-first approach
-- Fluid typography with `clamp()`
-- Flexible grid layouts
-- Optimized for all screen sizes
+- Flexible grid layouts using CSS Grid
+- Responsive images with `aspect-ratio`
+- Viewport-aware sizing with `clamp()`
+- Touch-friendly interactive elements
 
-### ♿ **Accessibility**
-- Semantic HTML structure
-- ARIA labels for navigation and interactive elements
-- Accessible form inputs
-- Motion preferences respected
-- Color contrast compliant
+### ♿ Accessibility
 
-### ⚡ **Performance**
-- Lazy loading for images
-- Optimized CSS and minimal JavaScript
-- Deferred script loading
-- Efficient event handling with passive listeners
+- Semantic HTML5 structure
+- Proper ARIA labels for screen readers
+- Alt text for all images
+- Focus states for keyboard navigation
+- Color contrast compliance
+- Respects user motion preferences
 
----
+### ⚡ Performance
 
-## 🛍️ Pages Overview
-
-### **Homepage (index.html)**
-- Full-screen video hero
-- Welcome introduction
-- Shop jewellery showcase
-- Blog highlights
-- Parallax quote section
-- Instagram feed grid
-- Newsletter signup
-
-### **Jewellery (jewellery.html)**
-- Product video hero
-- Shop pathways (collections, all products, custom designs)
-- Crystal guide section
-- Artist & store owner offerings
-- Wholesale information
-
-### **Ritual (ritual.html)**
-- Sacred ceremony hero
-- Philosophy & methodology
-- Three ritual pathways (Rise in Love, Lead from Heart, Shine Your Light)
-- Embodiment practices (breathwork, cacao, yoga, crystals)
-- Call-to-action for bookings
-
-### **Other Pages**
-- **About** - Personal story and mission
-- **Blog** - Travel & ritual stories
-- **Imagery** - Photography prints & destinations
-- **Collections** - Curated product categories
-- **All Products** - Complete shop catalog
-- **Custom Designs** - Bespoke order process
-- **Crystals** - Crystal guide & properties
-- **Supplies** - Maker resources
-- **Contact** - Get in touch
-- **Gift Cards** - Special offers
-- **Rewards** - Loyalty program
+- Lazy-loaded images
+- CSS-based animations (performant)
+- RequestAnimationFrame for scroll events
+- Optimized Google Fonts loading
+- Deployed on Vercel for fast delivery
 
 ---
 
-## 🎯 Interactions & JavaScript
+## 🎯 Page Breakdown
 
-### **Header State Management**
-- Dynamic header shadow on scroll
-- Sticky positioning with smooth transitions
+### 🏠 **Homepage (index.html)**
+The landing page features:
+- Full-screen video hero with overlay text
+- Welcome introduction section
+- About portrait section with CTA
+- Shop jewellery gallery (4-item showcase)
+- Blog section with 3 featured articles
+- Nature quote parallax break
+- Photography/imagery promotion
+- Instagram feed grid (6 images)
+- Newsletter subscription form
 
-### **Scroll-Triggered Reveals**
-- Elements animate into view as users scroll
-- Configurable timing and animation types
-- IntersectionObserver for optimal performance
+### 💎 **Jewellery Page (jewellery.html)**
+The main collection hub:
+- Video hero (consistent with homepage)
+- Introduction to handmade pieces
+- Portrait break with leaf panels
+- Sale ticker banner
+- Social media links section
+- Three-card "How to Shop" guide
+- Crystal section with floating image
+- Full-width image break with parallax
+- Artist and Store owner split sections
 
-### **Parallax Effect**
-- Background images shift based on scroll position
-- Creates depth and visual interest
-- Smooth requestAnimationFrame updates
+### 🧘 **Ritual Page (ritual.html)**
+Spiritual ceremonies offering:
+- Hero section with mystical copy
+- Philosophy/mantra introduction
+- Offerings with parallax image
+- Three pathway cards with archetypes
+- Full-width quote section
+- Four embodiment practices grid
+- Call-to-action section
 
-### **Smooth Anchor Scrolling**
-- Click internal links to smoothly scroll to sections
-- Natural navigation experience
-- Accessibility-friendly implementation
+### 📚 **Other Pages**
+- **Blog:** Travel stories with card layout
+- **Imagery:** Masonry gallery of photography
+- **About:** Creator biography
+- **Contact:** Contact form
+- **Collections:** Product collection browse
+- **All Products:** Full product catalog
+- **Custom Designs:** Custom order details
+- **Crystals:** Crystal descriptions & properties
+- **Supplies:** Artist supplies marketplace
+- **Gift Cards:** Gift card options
+- **Rewards:** Loyalty program information
+
+---
+
+## 🔧 Technologies Used
+
+- **HTML5** - Semantic markup
+- **CSS3** - Flexbox, Grid, animations, variables
+- **Vanilla JavaScript** - No frameworks, pure JS
+- **Google Fonts** - Allura & Questrial typefaces
+- **Vercel** - Deployment platform
+- **Git** - Version control
+
+---
+
+## 🎨 Customization Guide
+
+### Changing Colors
+
+Edit the CSS variables at the top of `styles.css`:
+
+```css
+:root {
+  --paper: #f0ebe4;      /* Change background color */
+  --clay: #a27d70;       /* Change text color */
+  --cedar: #745950;      /* Change accent color */
+  /* ... etc */
+}
+```
+
+### Updating Fonts
+
+Change the Google Fonts import in HTML `<head>`:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=YOUR_FONT&display=swap" rel="stylesheet" />
+```
+
+Then update the CSS:
+
+```css
+body {
+  font-family: 'Your Font', sans-serif;
+}
+```
+
+### Modifying Animations
+
+Control animation speed in `styles.css`:
+
+```css
+.js-ready .reveal {
+  transition: opacity 900ms ease;  /* Change 900ms to your duration */
+}
+```
+
+Or add `data-delay` to HTML elements for staggered timing:
+
+```html
+<div data-anim="fade-up" data-delay="120">Content</div>
+```
+
+### Adding New Images
+
+1. Upload images to `/Catelog/` directory
+2. Reference in HTML: `<img src="Catelog/image-name.jpg" alt="Description" />`
+3. Use descriptive alt text for accessibility
+
+---
+
+## 📱 Responsive Breakpoints
+
+The design is mobile-first and adapts smoothly:
+- **Mobile:** < 768px
+- **Tablet:** 768px - 1024px  
+- **Desktop:** > 1024px
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- No build tools required (static HTML/CSS/JS)
+### Clone the Repository
 
-### Local Development
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Sahil-K39/Divine-Devi-Rituals.git
-   ```
+```bash
+git clone https://github.com/Sahil-K39/Divine-Devi-Rituals.git
+cd Divine-Devi-Rituals
+```
 
-2. Open in your browser:
-   ```bash
-   cd Divine-Devi-Rituals
-   # Use a local server (Python, Node, etc.)
-   python -m http.server 8000
-   # or
-   npx http-server
-   ```
+### Open Locally
 
-3. Visit: `http://localhost:8000`
+No build process needed! Simply open `index.html` in your browser:
 
-### Deployment
-The project is deployed on **Vercel**:
-- Live: [divine-devi-rituals.vercel.app](https://divine-devi-rituals.vercel.app)
-- Connect your GitHub repo to Vercel for automatic deployments
+```bash
+open index.html
+# or
+start index.html
+```
+
+Or use a local server:
+
+```bash
+python -m http.server 8000
+# Then visit http://localhost:8000
+```
+
+### Deploy to Vercel
+
+The project is configured for Vercel deployment:
+
+```bash
+npm i -g vercel
+vercel
+```
+
+Or connect your GitHub repo directly to Vercel dashboard.
 
 ---
 
 ## 📝 Content Management
 
-### **Images**
-- All images stored in `/Catelog` directory
-- Optimized for web with lazy loading
-- Includes photography, product shots, and video posters
+### Updating Shop Information
 
-### **Forms**
-- Newsletter signup: Email capture with confirmation
-- Contact form: Available on contact page
-- Custom order form: On custom designs page
+Edit product descriptions in:
+- `jewellery.html` - Shop cards and intro text
+- `collections.html` - Collection pages
+- `all-products.html` - Full catalog
 
-### **Social Links**
-- Instagram, TikTok, Facebook, Pinterest, YouTube, Etsy
-- Featured throughout the site for community engagement
+### Managing Blog Posts
 
----
+Add new blog cards in `blog.html`:
 
-## 🎨 Customization
-
-### **Colors**
-Edit CSS variables in `styles.css`:
-```css
-:root {
-  --paper: #f0ebe4;
-  --clay: #a27d70;
-  --cedar: #745950;
-  --ink: #4c3c36;
-  --sage: #26352a;
-  --cream: #fffaf4;
-}
+```html
+<a class="hp-blog-card" href="blog.html">
+  <div class="hp-blog-thumb">
+    <img src="Catelog/image.jpg" alt="Post title" loading="lazy" />
+  </div>
+  <h3>YOUR POST TITLE</h3>
+</a>
 ```
 
-### **Typography**
-Font imports from Google Fonts can be modified in HTML `<head>` sections.
+### Newsletter Form
 
-### **Content**
-Update text, images, and links directly in HTML files.
+The newsletter form in the footer uses a simple submit handler:
 
-### **Animations**
-Adjust timing in `styles.css`:
-- Transition durations
-- Animation keyframes
-- Delay values
+```html
+<form class="hp-nl-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you!';">
+  <input type="email" placeholder="Enter your email" required />
+  <button type="submit">Subscribe</button>
+</form>
+```
+
+Connect to your email service (Mailchimp, Klaviyo, etc.) by updating the form action.
 
 ---
 
-## 🔧 Browser Support
+## 🎬 Animation Details
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+### Scroll-Triggered Animations
+
+Elements with `data-anim` attribute animate on scroll:
+
+```html
+<section data-anim="fade-up">Content fades up</section>
+<div data-anim="fade-right">Content fades from right</div>
+<div data-anim="fade-left">Content fades from left</div>
+```
+
+### Parallax Effects
+
+Background images move slower than foreground:
+
+```html
+<div data-parallax="0.07">Moves at 7% of scroll speed</div>
+```
+
+Adjust the value (0.01 - 0.2) for different parallax intensity.
+
+---
+
+## 🌐 Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
 - Mobile browsers (iOS Safari, Chrome Mobile)
+
+**Features used:**
+- CSS Grid & Flexbox
+- CSS Custom Properties (Variables)
+- IntersectionObserver API
+- Fetch API (if forms are connected)
 
 ---
 
@@ -253,26 +354,34 @@ Adjust timing in `styles.css`:
 
 © 2026 Devi Divine. All rights reserved.
 
----
-
-## 🤝 Contributing
-
-This is a personal portfolio/business website. For inquiries or collaborations, visit the [Contact](contact.html) page.
+This project is proprietary and created for Devi Divine. Unauthorized copying or distribution is prohibited.
 
 ---
 
-## 📬 Contact
+## 📮 Contact
 
-**Email:** [Through contact form](contact.html)  
+**Website:** https://divine-devi-rituals.vercel.app  
 **Instagram:** [@devi__divine](https://www.instagram.com/devi__divine)  
-**Website:** [divine-devi-rituals.vercel.app](https://divine-devi-rituals.vercel.app)
+**Email:** [contact form on website]
 
 ---
 
-## 🙏 Acknowledgments
+## 🙏 Credits
 
-Created with intention and care for the sacred art of ritual, crystal work, and conscious living.
+Designed and developed with care and attention to detail.
+
+**Imagery Credits:** Photography sourced from personal collection and credited creators. Featured images include work from community photographers.
 
 ---
 
-**Last Updated:** May 2026
+## 📚 Additional Resources
+
+- [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [MDN: Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- [Vercel Docs](https://vercel.com/docs)
+- [Accessible Colors](https://www.a11y-101.com/design/color-contrast)
+
+---
+
+**Last Updated:** May 2026  
+**Version:** 1.0.0
